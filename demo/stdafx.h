@@ -13,7 +13,9 @@
 #include <control/SMessageBox.h>
 #include <control/souictrls.h>
 #include <res.mgr/sobjdefattr.h>
-#include <com-cfg.h>
+
+#define SCOM_MASK 0xfffffff		//使用SOUI静态库时，可以使用这个mask来指定加载哪些库。
+#include <commgr2.h>
 #include <event/notifycenter.h>
 
 #include "resource.h"	//APP资源
@@ -31,9 +33,13 @@
 #include "../controls.extend/SFreeMoveWindow.h"
 #include "../controls.extend/tipwnd.h"
 #include "../controls.extend/SProgressRing.h"
+#include "../controls.extend/SGroupList.h"
+#include "../controls.extend/SAniWindow.h"
+#include "../controls.extend/propgrid/SPropertyGrid.h"
 
 #include "SInterpolatorView.h"
 #include "SPathView.h"
+#include "SCheckBox2.h"
 
 using namespace SOUI;
 
