@@ -110,6 +110,8 @@ HEADERS += include/SApp.h \
            include/helper/SplitString.h \
            include/helper/copylist.hpp \
            include/helper/SResID.h \
+           include/helper/SScriptTimer.h \
+           include/helper/STileViewItemLocator.h \
            include/helper/STime.h \
            include/helper/STimerEx.h \
            include/helper/SScriptTimer.h \

@@ -90,7 +90,7 @@ namespace SOUI
 
 			long taskID;
 			SSharedPtr<IRunnable> runnable;
-			Semaphore *semaphore;
+			SSemaphore *semaphore;
 			int  nPriority;
 		};
 
@@ -103,7 +103,7 @@ namespace SOUI
 		SCriticalSection m_runningLock;
 		std::string m_strName;
 		Thread m_thread;
-		Semaphore m_itemsSem;
+		SSemaphore m_itemsSem;
 		std::list<TaskItem> m_items;
 
 		SCriticalSection m_runningInfoLock;
